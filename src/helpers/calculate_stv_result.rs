@@ -1,4 +1,4 @@
-use std::collections::{hash_map::Entry, HashMap, HashSet};
+use std::collections::{HashMap, HashSet};
 
 use crate::{
     api_types::{ApiError, ApiResult},
@@ -207,7 +207,7 @@ fn transfer_surplus_votes(
             });
             Ok(())
         })
-        .collect::<ApiResult<_>>()?;
+        .collect::<ApiResult<()>>()?;
 
     let candidate_results = vote_counts
         .iter()

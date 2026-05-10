@@ -18,6 +18,6 @@ services:
       - 80:80
     environment:
       - DATABASE_URL=postgres://vaalikoppi:secret@db:5432/vaalikoppi
-      - HMAC_KEY=ThisShouldBeALongStringWithHighEntropy
+      - HMAC_KEY=cd7baa16ea412b9a210aa315a590a57545863c1089d50acceb339a277bf67425
       - PORT=80
       - ADMIN_PASSWORD=kettu
