@@ -7,7 +7,7 @@ echo "Starting Vaalikoppi..."
 docker compose up -d db
 
 echo "Waiting for PostgreSQL to be ready..."
-sleep 10
+sleep 5
 
 # Run migrations
 sqlx migrate run
